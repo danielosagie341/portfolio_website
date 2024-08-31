@@ -13,42 +13,42 @@ const works = [
     image: IMG1,
     title: 'WhatsApp Clone',
     github: 'https://github.com/danielosagie341/chathub-distributed-system',
-    demo: 'https://chathub-distributed-system.vercel.app/',
+    demo: 'https://chathub-distributed-system.vercel.app',
   },
   {
     id: 2,
     image: IMG2,
     title: 'Rise Africa',
     github: 'https://github.com/danielosagie341/rise-africa',
-    demo: 'rise-africa.vercel.app',
+    demo: 'https://rise-africa.vercel.app',
   },
   {
     id: 3,
     image: IMG3,
     title: 'Spotify Clone',
     github: 'https://github.com/danielosagie341/spotify_clone',
-    demo: 'https://spotify-clone-lime-one-39.vercel.app/',
+    demo: 'https://spotify-clone-lime-one-39.vercel.app',
   },
   {
     id: 4,
     image: IMG4,
     title: 'Basic social media app ',
     github: 'https://github.com/danielosagie341/simple_social_media_web_app',
-    demo: 'https://simple-social-media-web-app.vercel.app/',
+    demo: 'https://simple-social-media-web-app.vercel.app',
   },
   {
     id: 5,
     image: IMG5,
     title: 'Crypto Assistant Large Language Model',
     github: 'https://github.com/danielosagie341/geminoid-ui',
-    demo: 'geminoid-ui.vercel.app',
+    demo: 'https://geminoid-ui.vercel.app',
   },
   {
     id: 6,
     image: IMG6,
     title: 'Fitness Rings (Smart Health Assistant)',
     github: 'https://github.com/danielosagie341/fitness-rings',
-    demo: 'fitness-rings.vercel.app',
+    demo: 'https://fitness-rings.vercel.app',
   }
 ]
 

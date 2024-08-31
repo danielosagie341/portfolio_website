@@ -20,15 +20,6 @@ const experience = () => {
                 </div>
             </article>
 
-            
-            <article className='experience__details'>
-              <BsPatchCheckFill />
-              <div className='.experience__details-icons'>
-              <h4>HTML</h4>
-              <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
             <article className='experience__details'>
               <BsPatchCheckFill />
               <div className='.experience__details-icons'>
