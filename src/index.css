@@ -54,18 +54,34 @@
     position: absolute;
     right: 0;
     top: -100px;
+    width: 100%;
+}
+
+.theme-switcher div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.themeBtn {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 50%;
 }
 
 .btn-dark {
-    border: 1px solid var(--color-bg-variant);
+    background: #003366;
 }
 
 .btn-light {
-    border: 1px solid var(--color-light);
+    background: #eaeaea;
 }
 
 .btn-extra {
-    border: 1px solid var(--color-primary-variant);
+    background: #291618;
 }
 
 .btn-dark:hover,

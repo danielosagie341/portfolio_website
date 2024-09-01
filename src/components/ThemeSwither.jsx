@@ -10,24 +10,32 @@ const ThemeSwitcher = () => {
 
     return (
         <div className="theme-switcher">
-            <button
+            <div>
+                <button
                 onClick={() => setTheme('light')}
-                className={`btn btn-light ${theme === 'light' ? 'active' : ''}`}
+                className={`themeBtn btn-light ${theme === 'light' ? 'active' : ''}`}
             >
-                Light Mode
-            </button>
-            <button
-                onClick={() => setTheme('dark')}
-                className={`btn btn-dark ${theme === 'dark' ? 'active' : ''}`}
-            >
-                Dark Mode
-            </button>
-            <button
+                </button>
+                Light
+            </div>
+            
+            <div>
+                <button
+                    onClick={() => setTheme('dark')}
+                    className={`themeBtn btn-dark ${theme === 'dark' ? 'active' : ''}`}
+                >
+                </button>
+                Dark
+            </div>
+            
+            <div>
+                <button
                 onClick={() => setTheme('extra')}
-                className={`btn btn-extra ${theme === 'extra' ? 'active' : ''}`}
+                className={`themeBtn btn-extra ${theme === 'extra' ? 'active' : ''}`}
             >
-                Warm Mode
-            </button>
+                </button>
+                Warm
+            </div>
         </div>
     );
 };
