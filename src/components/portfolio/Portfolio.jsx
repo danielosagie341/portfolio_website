@@ -63,20 +63,6 @@ const works = [
   }
 ]
 
-const featuredProject = {
-  image: IMG1,
-  title: 'Featured: WhatsApp Clone (Case Study)',
-  description: 'A real-time chat platform built for scale, featuring authentication, group messaging, and distributed architecture. Reduced message delivery latency by 40%',
-  techStack: 'React.js, Firebase, Node.js, WebSockets',
-  github: 'https://github.com/danielosagie341/chathub-distributed-system',
-  demo: 'https://chathub-distributed-system.vercel.app',
-  metrics: [
-    '1,000+ concurrent users',
-    '40% faster message delivery',
-    '99.99% uptime during test week',
-  ],
-};
-
 const Portfolio = () => {
   return (
     <section id='portfolio'>

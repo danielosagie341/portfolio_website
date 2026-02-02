@@ -1,14 +1,13 @@
-import React from 'react'
 import { BsInstagram, BsTelegram, BsTwitter } from 'react-icons/bs'
 import './footer.css'
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>OSAGIE DANIEL</a>
+      <a href="/" className='footer__logo'>OSAGIE DANIEL</a>
 
       <ul className='permalinks'>
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#experience">Experience</a></li>

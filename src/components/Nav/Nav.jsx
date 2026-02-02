@@ -5,7 +5,7 @@ import { RiServiceLine } from 'react-icons/ri';
 import './nav.css';
 
 const sections = [
-  { id: 'home', label: 'Home', icon: <AiOutlineHome />, href: '#' },
+  { id: 'home', label: 'Home', icon: <AiOutlineHome />, href: '/' },
   { id: 'about', label: 'About', icon: <AiOutlineUser />, href: '#about' },
   { id: 'experience', label: 'Experience', icon: <BiBook />, href: '#experience' },
   { id: 'services', label: 'Services', icon: <RiServiceLine />, href: '#services' },
@@ -36,7 +36,7 @@ const Nav = () => {
   return (
     <nav className="sticky-navbar">
       <div className="nav-logo">
-        <a href="#" aria-label="Osagie Daniel Home" className="nav-logo-link">OSAGIE DANIEL</a>
+        <a href="/" aria-label="Osagie Daniel Home" className="nav-logo-link">OSAGIE DANIEL</a>
       </div>
       <div className="nav-links">
         {sections.map((section) => (
