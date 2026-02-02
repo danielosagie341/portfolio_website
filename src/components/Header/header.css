@@ -1,0 +1,148 @@
+header.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #e1d4c2 0%, #beb5a9 100%);
+    color: #291c0e;
+    padding: 4rem 0;
+    padding-top: 5rem;
+    overflow: hidden;
+}
+
+.header__container.hero__split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    min-height: 70vh;
+    background: none;
+    box-shadow: none;
+    padding: 0 2vw;
+}
+
+.hero__left {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.2rem;
+    max-width: 50%;
+}
+.hero__greeting {
+    font-size: 1.3rem;
+    color: #291c0e;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+.hero__name {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #291c0e;
+    margin-bottom: 0.2rem;
+}
+.hero__role {
+    font-size: 1.5rem;
+    color: #291c0e;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+.hero__summary {
+    color: #6e473b;
+    font-size: 1.08rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+}
+.CTA {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-start;
+}
+.header__socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.1rem;
+    margin-top: 1.5rem;
+    position: static;
+}
+.header__socials::after {
+    display: none;
+}
+
+.hero__right {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero__avatar {
+    max-width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #e1d4c2;
+    box-shadow: 0 4px 32px rgba(41, 28, 14, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.action-button, .header-socials a {
+  background: #a78d78;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  transition: background 0.2s;
+}
+.action-button:hover, .header-socials a:hover {
+  background: #6e473b;
+}
+
+@media (max-width: 1024px) {
+    .header__container.hero__split {
+        flex-direction: column-reverse;
+        gap: 2.5rem;
+        min-height: 60vh;
+        padding: 0 1vw;
+    }
+    .hero__avatar {
+        width: 220px;
+        height: 400px;
+    }
+    .hero__left{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header.hero-section {
+        padding-top: 2.5rem;
+    }
+    .header__container.hero__split {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        min-height: 50vh;
+        padding: 0 0.5vw;
+    }
+    .hero__avatar {
+        width: 120px;
+        height: 200px;
+    }
+    .hero__name {
+        font-size: 2rem;
+    }
+    .hero__role {
+        font-size: 1.1rem;
+    }
+
+}

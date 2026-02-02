@@ -1,0 +1,140 @@
+footer {
+    background: linear-gradient(135deg, #291c0e 0%, #4a3829 100%);
+    padding: 4rem 0 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0;
+    color: rgba(255, 255, 255, 0.7);
+    border-top: 1px solid rgba(167, 141, 120, 0.2);
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.footer__logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.permalinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto 3rem;
+    list-style: none;
+    padding: 0;
+}
+
+.permalinks li a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.permalinks li a:hover {
+    background: rgba(167, 141, 120, 0.15);
+    color: #a78d78;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.footer__socials a {
+    background: rgba(167, 141, 120, 0.1);
+    color: #a78d78;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(167, 141, 120, 0.2);
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    width: 45px;
+    height: 45px;
+}
+
+.footer__socials a:hover {
+    background: #a78d78;
+    color: #fff;
+    transform: translateY(-4px);
+    border-color: #a78d78;
+    box-shadow: 0 4px 15px rgba(167, 141, 120, 0.3);
+}
+
+.footer__copyright {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .permalinks {
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 2.5rem 1rem 1.5rem;
+    }
+
+    .footer__logo {
+        font-size: 1.5rem;
+    }
+
+    .permalinks {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .permalinks li a {
+        display: block;
+    }
+
+    .footer__socials {
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .footer__socials a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .footer__copyright {
+        font-size: 0.8rem;
+        padding-top: 1.5rem;
+    }
+}

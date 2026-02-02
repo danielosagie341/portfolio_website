@@ -1,0 +1,87 @@
+nav.sticky-navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: rgba(225,212,194,0.97); /* #e1d4c2 with opacity */
+    box-shadow: 0 2px 12px rgba(41,28,14,0.08);
+    padding: 0.5rem 3vw;
+    z-index: 100;
+    border-bottom: 1px solid #beb5a9;
+    min-height: 64px;
+}
+
+.nav-logo,
+.nav-logo-link {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #291c0e;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.nav-logo{
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    color: #6e473b;
+    font-size: 1.08rem;
+    font-weight: 500;
+    padding: 0.5rem 0.9rem;
+    border-radius: 2rem;
+    transition: background 0.2s, color 0.2s;
+    background: transparent;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-links a .nav-label {
+    display: none;
+}
+@media (min-width: 1024px) {
+
+    .nav-logo{
+        display: block;
+        margin-right: 150px;
+    }
+}
+@media (min-width: 720px) {
+    .nav-links a .nav-label {
+        display: inline;
+        margin-left: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+.nav-links a.active, .nav-links a:hover {
+    background: #a78d78;
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(167,141,120,0.10);
+}
+
+.nav-links a.active::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 3px;
+    background: #6e473b;
+    border-radius: 2px;
+}
