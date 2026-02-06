@@ -227,8 +227,8 @@ const Portfolio = () => {
                   {demo ? (
                     <a href={demo} className='btn btn-primary' rel="noreferrer" target='_blank'>Live Demo</a>
                   ) : (
-                   <span className='btn' style={{ cursor: 'default', opacity: 0.8, fontSize: '0.75rem', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', color: '#6e473b', border: '1px dashed #beb5a9' }}>
-                      Can't really demo mobile app now can I? 🤷‍♂️
+                   <span className='btn' style={{ cursor: 'default', opacity: 0.8, fontSize: '1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', color: '#6e473b', border: '1px dashed #beb5a9' }}>
+                       🤷‍♂️
                     </span>
                   )}
                 </div>

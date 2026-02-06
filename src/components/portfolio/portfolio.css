@@ -176,10 +176,13 @@ section#portfolio h2 {
 
     .portfolio__container {
         padding: 0 1rem;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .portfolio__grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 1.5rem;
     }
 
